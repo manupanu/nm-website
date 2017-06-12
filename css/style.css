@@ -1,0 +1,114 @@
+body {
+	color: #424242 !important;
+	background-color: #eee !important;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #424242;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.header {
+	color: #424242 !important;
+}
+.brand-logo img {
+	margin-top: 2px;
+	width: 	60px !important;
+	height: 60px !important;
+}
+
+.parallax-container {
+  min-height: 100% !important;
+  line-height: 0;
+  height:100% !important;
+  color: rgba(255,255,255,.9);
+	width:calc(100vw) !important; /*vw is viewport width*/
+	height:calc(100vh) !important;/*vw is viewport height*/
+
+}
+
+	.header-image {
+		margin-top: 400px;
+	}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+	.first-image {
+		min-height: 100% !important;
+		height: 100% !important;
+		width:calc(100vw - 17px) !important; /*vw is viewport width*/
+		height:calc(100vh - 50px) !important;/*vw is viewport height*/
+		 -webkit-filter: grayscale(50%); /* Safari */
+    filter: grayscale(70%);
+	}
+
+section {
+	padding: 20px 0 !important;
+}
+
+.aboutcontent {
+	height: 350px;
+	width: 200px;
+	background-image: url("../img/bild1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-right: 5px solid #eee;
+}
+.secondcontent {
+	background-image: url("../img/bild2.jpg");
+}
+
+@media only screen and (max-width : 992px) {
+	 #index-banner .section {
+			top: 0;
+		}
+
+		.header-image {
+			width: 412px !important;
+			height: 100px !important;
+	}
+}
+
+@media only screen and (max-width : 600px) {
+	.first-image {
+		min-height: 400px;
+	}
+	.header-image {
+			margin-top: 250px;
+			width: 206px !important;
+			height: 50px !important;
+	}
+
+	.brand-logo img {
+		margin-top: 3px;
+		width: 	50px !important;
+		height: 50px !important;
+	}
+
+	.first-image {
+		width:calc(100vw) !important; /*vw is viewport width*/
+		height:calc(100vh) !important;/*vw is viewport height*/
+	}
+
+	.aboutcontent {
+		height: 100px;
+		width: 200px;
+		border-right: none;
+		border-bottom: 5px solid #eee;
+		background-position: center;
+}
+
+
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
