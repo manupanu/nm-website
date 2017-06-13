@@ -1,114 +1,245 @@
-body {
-	color: #424242 !important;
-	background-color: #eee !important;
+/* ############################################################
+	FARBKLIMA
+###############################################################
+
+	Schwarz:			#000	(Lauftext, Mainmenü, Icons)
+	Weiss:				#fff	(Hintergrund-Body)
+	Hellgrau::;		#fafafa   (Fläche Section)
+	
+###############################################################
+	Allgemein Elemnete
+############################################################ */
+* {
+	margin: 0;
+	padding: 0;	
 }
 
-nav ul a,
-nav .brand-logo {
-  color: #424242;
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #fff !important;
+}
+
+.row {
+	margin: 50px 0 !important;	
+}
+
+.abstand {
+	margin: 100px;	
+}
+/*###############################################################
+	Schriften
+############################################################ */
+body {
+	color: #000 !important;
+	/* weitere googlefonts
+	font-family: 'Quicksand', sans-serif;
+	font-family: 'News Cycle', sans-serif;
+	Poiret One
+	Didact Gothic
+	Cambay
+	NTR
+	*/
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+  line-height: 125%;
+}
+
+body ::selection {
+		color: #fff;
+		background: #000;
+}
+body ::-moz-selection {
+		color: #fff;
+		background: #000;
 }
 
 p {
-  line-height: 2rem;
+	font-size: 1rem;
+ 	font-weight: 400;
+  line-height: 125%;
 }
 
-.header {
-	color: #424242 !important;
+b {
+	font-size: 1rem;
+ 	font-weight: 700;
+  line-height: 126%;
 }
+
+nav ul a {
+  color: #000;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.button-collapse {
+	color: #000;
+	float: right !important;
+}
+
+/*###############################################################
+	Element Header & Parallax Image
+############################################################ */
 .brand-logo img {
-	margin-top: 2px;
-	width: 	60px !important;
-	height: 60px !important;
+	width: 	50px !important;
+	height: 50px !important;
+	margin-top: 3px;		
 }
 
 .parallax-container {
+	width: calc(100vw - 17px); /*viewport width*/
+	height: calc(100vh - 55px);/*viewport height*/
   min-height: 100% !important;
   line-height: 0;
-  height:100% !important;
-  color: rgba(255,255,255,.9);
-	width:calc(100vw) !important; /*vw is viewport width*/
-	height:calc(100vh) !important;/*vw is viewport height*/
-
 }
-
-	.header-image {
-		margin-top: 400px;
-	}
-  .parallax-container .section {
+	.parallax-container .section {
     width: 100%;
   }
-
 	.first-image {
-		min-height: 100% !important;
-		height: 100% !important;
-		width:calc(100vw - 17px) !important; /*vw is viewport width*/
-		height:calc(100vh - 50px) !important;/*vw is viewport height*/
-		 -webkit-filter: grayscale(50%); /* Safari */
-    filter: grayscale(70%);
+		width: calc(100vw - 17px); /*viewport width*/
+		height: calc(100vh - 55px);/*viewport height*/
+    -webkit-filter: grayscale(100%); /* Safari */
+	  filter: grayscale(100%);		
 	}
-
+		.header-image {
+			width: 206px;
+			height: 50px;
+			margin-top: calc(55vh);
+		}
+		
+/*###############################################################
+	Element Section About
+############################################################ */
 section {
 	padding: 20px 0 !important;
 }
 
-.aboutcontent {
-	height: 350px;
-	width: 200px;
-	background-image: url("../img/bild1.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-right: 5px solid #eee;
-}
-.secondcontent {
-	background-image: url("../img/bild2.jpg");
+.aboutPerson {
+	position: relative;
 }
 
-@media only screen and (max-width : 992px) {
-	 #index-banner .section {
-			top: 0;
+	.nadja img, .manuel img {
+		width: 90%;
+		height: 100%;
+		float: right;
+		-webkit-filter: grayscale(100%); /* Safari */
+		filter: grayscale(100%);
+	}
+	.manuel img {
+		max-height: 800px;
+		float: left;
+	}
+	
+	.nadja .aboutPerson_box, .manuel .aboutPerson_box {
+		width: 60%;
+		float: left;
+		position: absolute;
+		top: 20%;
+		left: 18%;
+		z-index: 1000;
+	}
+	.manuel .aboutPerson_box {
+		top: 30%;
+		left: 35%;
+	}
+		.aboutPerson_box h4 {
+			margin: 0 30px 5px 30px;	
+		}
+		.description {
+			padding: 15px 30px;
+			background-color: #fff;
 		}
 
-		.header-image {
-			width: 412px !important;
-			height: 100px !important;
+/* Width & height calculation speicial for mobile devices FUNKTIONIERT NO NID*/
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+	.parallax-container {
+		width: calc(100vw); /*viewport width*/
+	}
+		.first-image {
+			width: calc(100vw); /*viewport width*/	
 	}
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+		.parallax-container {
+			width: calc(100vw) !important; /*viewport width*/
+		}
+			.first-image {
+				width: calc(100vw) !important; /*viewport width*/	
+		}
+}
+
+/*	sm*/
+@media (min-width: 760px) {		
+	/*###############################################################
+		Element Header & Parallax Image
+	############################################################ */
+	.brand-logo img {
+		width: 	60px !important;
+		height: 60px !important;
+		margin-top: 2px;
+	}
+	
 	.first-image {
-		min-height: 400px;
+		width:calc(100vw - 17px) !important; /*viewport width*/
+		height:calc(100vh - 60px) !important;/*viewport height*/
+		min-height: 100% !important;
 	}
 	.header-image {
-			margin-top: 250px;
-			width: 206px !important;
-			height: 50px !important;
+			width: 412px;
+			height: 100px;
 	}
-
-	.brand-logo img {
-		margin-top: 3px;
-		width: 	50px !important;
-		height: 50px !important;
+	
+	/*###############################################################
+		Element Section About
+	############################################################ */
+	.nadja img, .manuel img {
+		width: 60%;
 	}
-
-	.first-image {
-		width:calc(100vw) !important; /*vw is viewport width*/
-		height:calc(100vh) !important;/*vw is viewport height*/
+	
+	.nadja .aboutPerson_box, .manuel .aboutPerson_box {
+		width: 52%;
+		top: 20%;
+		left: 18%;
+		z-index: 1000;
 	}
-
-	.aboutcontent {
-		height: 100px;
-		width: 200px;
-		border-right: none;
-		border-bottom: 5px solid #eee;
-		background-position: center;
+	.manuel .aboutPerson_box {
+		top: 30%;
+		left: 50%;
+	}
 }
 
-
+/*	md*/
+@media (min-width: 960px) {
+	.header-image {
+			width: 824px;
+			height: 200px;
+	}
+	
+	/*###############################################################
+		Element Section About
+	############################################################ */
+	.nadja .aboutPerson_box, .manuel .aboutPerson_box {
+		width: 42%;
+		top: 20%;
+		left: 18%;
+	}
+	.manuel .aboutPerson_box {
+		top: 30%;
+		left: 53%;
+	}
 }
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
+/*	lg*/
+@media (min-width: 1200px) {
+		.nadja .aboutPerson_box, .manuel .aboutPerson_box {
+				width: 38%;
+		}
 }
