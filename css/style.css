@@ -5,13 +5,13 @@
 	Schwarz:			#000	(Lauftext, Mainmenü, Icons)
 	Weiss:				#fff	(Hintergrund-Body)
 	Hellgrau::;		#fafafa   (Fläche Section)
-	
+
 ###############################################################
 	Allgemein Elemnete
 ############################################################ */
 * {
 	margin: 0;
-	padding: 0;	
+	padding: 0;
 }
 
 body {
@@ -21,11 +21,11 @@ body {
 }
 
 .row {
-	margin: 50px 0 !important;	
+	margin: 50px 0 !important;
 }
 
 .abstand {
-	margin: 100px;	
+	margin: 100px;
 }
 /*###############################################################
 	Schriften
@@ -84,7 +84,7 @@ nav ul a {
 .brand-logo img {
 	width: 	50px !important;
 	height: 50px !important;
-	margin-top: 3px;		
+	margin-top: 3px;
 }
 
 .parallax-container {
@@ -100,14 +100,14 @@ nav ul a {
 		width: calc(100vw - 17px); /*viewport width*/
 		height: calc(100vh - 55px);/*viewport height*/
     -webkit-filter: grayscale(100%); /* Safari */
-	  filter: grayscale(100%);		
+	  filter: grayscale(100%);
 	}
 		.header-image {
 			width: 206px;
 			height: 50px;
 			margin-top: calc(55vh);
 		}
-		
+
 /*###############################################################
 	Element Section About
 ############################################################ */
@@ -130,7 +130,7 @@ section {
 		max-height: 800px;
 		float: left;
 	}
-	
+
 	.nadja .aboutPerson_box, .manuel .aboutPerson_box {
 		width: 60%;
 		float: left;
@@ -144,7 +144,7 @@ section {
 		left: 35%;
 	}
 		.aboutPerson_box h4 {
-			margin: 0 30px 5px 30px;	
+			margin: 0 30px 5px 30px;
 		}
 		.description {
 			padding: 15px 30px;
@@ -155,44 +155,34 @@ section {
 	/*###############################################################
 		Element Section Form
 	############################################################ */
-	.input-field .prefix.active {
-		color: #000;
-	 }
-  	 .input-field label {
-     	color: #000;
-  	 }
-   /* label focus color */
- 	 .input-field input[type=text]:focus + label {
-     	color: #000;
-  	 }
 
 /* Width & height calculation speicial for mobile devices FUNKTIONIERT NO NID*/
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
   and (-webkit-device-pixel-ratio: 2) {
 	.parallax-container {
 		width: calc(100vw); /*viewport width*/
 	}
 		.first-image {
-			width: calc(100vw); /*viewport width*/	
+			width: calc(100vw); /*viewport width*/
 	}
 }
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
 		.parallax-container {
 			width: calc(100vw) !important; /*viewport width*/
 		}
 			.first-image {
-				width: calc(100vw) !important; /*viewport width*/	
+				width: calc(100vw) !important; /*viewport width*/
 		}
 }
 
 /*	sm*/
-@media (min-width: 760px) {		
+@media (min-width: 760px) {
 	/*###############################################################
 		Element Header & Parallax Image
 	############################################################ */
@@ -201,7 +191,7 @@ section {
 		height: 60px !important;
 		margin-top: 2px;
 	}
-	
+
 	.first-image {
 		width:calc(100vw - 17px) !important; /*viewport width*/
 		height:calc(100vh - 60px) !important;/*viewport height*/
@@ -211,14 +201,14 @@ section {
 			width: 412px;
 			height: 100px;
 	}
-	
+
 	/*###############################################################
 		Element Section About
 	############################################################ */
 	.nadja img, .manuel img {
 		width: 60%;
 	}
-	
+
 	.nadja .aboutPerson_box, .manuel .aboutPerson_box {
 		width: 52%;
 		top: 20%;
@@ -237,7 +227,7 @@ section {
 			width: 824px;
 			height: 200px;
 	}
-	
+
 	/*###############################################################
 		Element Section About
 	############################################################ */
