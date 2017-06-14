@@ -151,6 +151,21 @@ section {
 			background-color: #fff;
 		}
 
+
+	/*###############################################################
+		Element Section Form
+	############################################################ */
+	.input-field .prefix.active {
+		color: #000;
+	 }
+  	 .input-field label {
+     	color: #000;
+  	 }
+   /* label focus color */
+ 	 .input-field input[type=text]:focus + label {
+     	color: #000;
+  	 }
+
 /* Width & height calculation speicial for mobile devices FUNKTIONIERT NO NID*/
 @media screen 
   and (device-width: 320px) 
