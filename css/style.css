@@ -156,6 +156,37 @@ section {
 		Element Section Form
 	############################################################ */
 
+	/*###############################################################
+		Element Section Social Media Icons
+	############################################################ */
+	ul {
+	overflow: auto;
+	}
+
+	ul li {
+		list-style-type: none;
+		float: left;
+	}
+
+	ul li a i {
+		background: #000;
+		color: #fff;
+		width: 40px;
+		height: 40px;
+		border-radius: 20px;
+		font-size: 25px;
+		text-align: center;
+		margin-right: 10px;
+		padding-top: 15%;
+	}
+	ul li a i {
+		transition: all 0.2s ease-in-out;
+	}
+	ul li a i:hover {
+		opacity: .7;
+	}
+
+
 /* Width & height calculation speicial for mobile devices FUNKTIONIERT NO NID*/
 @media screen
   and (device-width: 320px)
