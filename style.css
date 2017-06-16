@@ -1,0 +1,373 @@
+/* ############################################################
+	FARBKLIMA
+###############################################################
+
+	Schwarz:			#000	(Lauftext, Mainmenü, Icons)
+	Weiss:				#fff	(Hintergrund-Body)
+	Hellgrau::;		#fafafa   (Fläche Section)
+
+###############################################################
+	Allgemein Elemnete
+############################################################ */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #fff !important;
+	transition: all 0.3s ease-in-out !important;
+}
+
+.row {
+	margin: 50px 0 !important;
+}
+
+.abstand {
+	margin: 100px;
+}
+
+button,  #btntop{
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+	border: 2px solid #000 !important;
+	padding: 0 15px !important;
+}
+
+#btntop {
+	width: 40px;
+	height: 40px;
+	margin: 0 !important;
+	padding: 0 !important;	
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 1000000;
+}
+button:hover, #btntop:hover {
+	color: #000 !important;
+	border: 2px solid #000;
+	background-color: transparent !important;
+}
+
+*, div, img {
+	border-radius: 2px !important;	
+}
+
+/*###############################################################
+	Schriften
+############################################################ */
+body {
+	color: #000 !important;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+  line-height: 125%;
+}
+
+body ::selection {
+		color: #fff;
+		background: #000;
+}
+body ::-moz-selection {
+		color: #fff;
+		background: #000;
+}
+
+p {
+	font-size: 1rem;
+ 	font-weight: 400;
+  line-height: 125%;
+}
+
+b {
+	font-size: 1rem;
+ 	font-weight: 700;
+  line-height: 126%;
+}
+
+nav ul a {
+  color: #000;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.button-collapse {
+	color: #000;
+	float: right !important;
+}
+
+a {
+	color: #757575;
+	transition: all 0.3s ease-in-out !important;
+}
+
+a:hover {
+	color: #000;
+}
+
+/*###############################################################
+	Navigation
+############################################################ */
+.nav-wrapper ul li a {
+	text-decoration: none;
+	position: relative;
+}
+.nav-wrapper ul li a:hover{
+	background-color: #fff !important;
+}
+
+.nav-wrapper ul li a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #000;
+  transition: 0.3s ease-in;
+}
+
+.nav-wrapper ul li a:hover:before {
+ width: 100%;
+}
+
+/*###############################################################
+	Element Header & Parallax Image
+############################################################ */
+
+.brand-logo img {
+	width: 	50px !important;
+	height: 50px !important;
+	margin-top: 3px;
+}
+
+.parallax-container {
+	width: calc(100vw - 17px); /*viewport width*/
+	height: calc(100vh - 55px);/*viewport height*/
+  min-height: 100% !important;
+  line-height: 0;
+}
+	.parallax-container .section {
+    width: 100%;
+  }
+	.first-image {
+		width: calc(100vw - 17px); /*viewport width*/
+		height: calc(100vh - 55px);/*viewport height*/
+    -webkit-filter: grayscale(100%); /* Safari */
+	  filter: grayscale(100%);
+	}
+		.header-image {
+			width: 206px;
+			height: 50px;
+			margin-top: calc(55vh);
+		}
+
+/*###############################################################
+	Element Section About
+############################################################ */
+section {
+	padding: 20px 0 !important;
+}
+
+.aboutPerson {
+	position: relative;
+}
+
+	.nadja img, .manuel img {
+		width: 90%;
+		height: 100%;
+		float: right;
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+	.manuel img {
+		max-height: 800px;
+		float: left;
+		margin-bottom: 20px;
+	}
+
+	.nadja .aboutPerson_box, .manuel .aboutPerson_box {
+		width: 100%;
+		z-index: 1000;	
+	}
+		.aboutPerson_box h4 {
+			margin: 0 0 5px 0;
+		}
+		.description {
+			padding: 15px 0  20px 0;
+			background-color: #fff;
+		}
+
+	/*###############################################################
+		Element Section Service
+	############################################################ */
+	.referenc {
+		margin-bottom: 45px;	
+	}
+	.referenc:last-child {
+		margin-bottom: 0;	
+	}
+	
+	/*###############################################################
+		Element Section Referenzen
+	############################################################ */
+	.bw {
+		transition: all 0.2s ease-in-out;
+		-webkit-filter: grayscale(100%); /* Safari */
+		filter: grayscale(100%);
+	}
+	.bw:hover {
+		-webkit-filter: grayscale(0%); /* Safari */
+		filter: grayscale(0%);
+	}
+
+	/*###############################################################
+		Element Footer Social Media Icons
+	############################################################ */
+	ul {
+		overflow: auto;
+	}
+		ul li {
+			list-style-type: none;
+			float: left;
+		}
+		ul li a i {
+			width: 40px;
+			height: 40px;
+			margin-right: 10px;
+			padding-top: 22.5%;
+			border: 2px solid #000;
+			color: #fff;
+			background-color: #000;
+			font-size: 25px;
+			text-align: center;
+			transition: all 0.2s ease-in-out;
+		}
+			ul li a i:hover {
+				border: 2px solid #000;
+				background-color: transparent; 
+				color: #000;
+			}
+
+/*###############################################################
+		Site Impressum
+	############################################################ */
+
+	.header_impr {
+		padding: 50px 14px;
+	}
+	
+	#linkBack {
+		padding-top: 30px;
+		float: right;	
+	}
+
+
+
+/* Width & height calculation speicial for mobile devices FUNKTIONIERT NO NID*/
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2) {
+	.parallax-container {
+		width: calc(100vw); /*viewport width*/
+	}
+		.first-image {
+			width: calc(100vw); /*viewport width*/
+	}
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+		.parallax-container {
+			width: calc(100vw) !important; /*viewport width*/
+		}
+			.first-image {
+				width: calc(100vw) !important; /*viewport width*/
+		}
+}
+
+/*	sm*/
+@media (min-width: 760px) {
+	/*###############################################################
+		Element Header & Parallax Image
+	############################################################ */
+	.brand-logo img {
+		width: 	60px !important;
+		height: 60px !important;
+		margin-top: 2px;
+	}
+
+	.first-image {
+		width:calc(100vw - 17px) !important; /*viewport width*/
+		height:calc(100vh - 60px) !important;/*viewport height*/
+		min-height: 100% !important;
+	}
+	.header-image {
+			width: 412px;
+			height: 100px;
+	}
+
+	/*###############################################################
+		Element Section About
+	############################################################ */
+	.nadja img, .manuel img {
+		width: 60%;
+	}
+
+	.nadja .aboutPerson_box, .manuel .aboutPerson_box {
+		width: 52%;
+		float: left;
+		position: absolute;
+		top: 20%;
+		left: 18%;
+		z-index: 1000;
+	}
+	.manuel .aboutPerson_box {
+		top: 30%;
+		left: 50%;
+	}
+	
+	.aboutPerson_box h4 {
+			margin: 0 30px 5px 30px;
+		}
+		.description {
+			padding: 15px 30px;
+			background-color: #fff;
+		}
+
+}
+
+/*	md*/
+@media (min-width: 960px) {
+	.header-image {
+			width: 824px;
+			height: 200px;
+	}
+
+	/*###############################################################
+		Element Section About
+	############################################################ */
+	.nadja .aboutPerson_box, .manuel .aboutPerson_box {
+		width: 42%;
+		top: 20%;
+		left: 18%;
+	}
+	.manuel .aboutPerson_box {
+		top: 30%;
+		left: 53%;
+	}
+}
+
+/*	lg*/
+@media (min-width: 1200px) {
+		.nadja .aboutPerson_box, .manuel .aboutPerson_box {
+				width: 38%;
+		}
+}
