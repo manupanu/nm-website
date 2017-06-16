@@ -9,10 +9,10 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -63,7 +63,11 @@
 			<div class="abstand"></div>
 			<div class="row aboutPerson nadja">
 				<div class="col s12 m12">
-					<div class="aboutPerson_box"><h4 >Nadja Mullis</h4><p class="description">Ich bin d Nadja und ich bin däau eh bi chef<br><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.</p>
+					<div class="aboutPerson_box"><h4 >Nadja Mullis</h4><p class="description">Ich bin d Nadja und ich bin vorallem der chef<br><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.<br><br>
+						<a href="mailto:nadja.mullis@hotmail.com"><button class="btn black white-text z-depth-0" href="#">
+							E-Mail
+						</button></a>
+						</p>
 					</div>
 					<img class="responsive-img" src="img/n.jpg" alt="nadja">
 				</div>
@@ -73,7 +77,11 @@
 					<img class="responsive-img" src="img/m.jpg" alt="manuel">
 					<div class="aboutPerson_box">
 					  <h4 class="">Manuel Anrig</h4>
-					  <p class="description">Isch eigentlich au bizeli der chef.<br><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis part</p>
+					  <p class="description">Isch eigentlich au bizeli der chef.<br><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis part<br><br>
+						<a href="mailto:manuel.anrig@bluewin.ch"><button class="btn black white-text z-depth-0" href="#">
+							E-Mail
+						</button></a>
+						</p>
 				  </div>
 				</div>
 			</div>
@@ -85,17 +93,17 @@
 		<section id="service" class="grey lighten-5">
 			<h4 class="center-align">Service</h4>
 				<div class="row center-align">
-					<div class="col s12 m4">
-						<i class="fa fa-image fa-5x" aria-hidden="true"></i></i>
+					<div class="col s12 m4 referenc">
+						<i class="fa fa-image fa-5x" aria-hidden="true"></i>
 						<h5>Design</h5>
 						<p>Entwickelung von neuen, spannenden Gestaltungslösungen, die nicht nur gut aussehen, sondern vor allem auch die zu Ihnen passt. </p>
 					</div>
-					<div class="col s12 m4">
+					<div class="col s12 m4 referenc">
 						<i class="fa fa-code fa-5x" aria-hidden="true"></i><br>
 						<h5>Development</h5>
 						<p>Mit dem technischen Rüstzeug im Gepäck wird Ihr Projekt detailgenau umgesezt. Danach können Sie sich auf Wartung und Service verlassen.</p>
 					</div>
-					<div class="col s12 m4">
+					<div class="col s12 m4 referenc">
 						<i class="fa fa-line-chart fa-5x" aria-hidden="true"></i><br>
 						<h5>Marketing</h5>
 						<p>Massgeschneiderte.<br>Spezifische Lösungen, damit auch Ihre Onlineaktivitäten zur Punktlandung werden.</p>
@@ -185,6 +193,7 @@
   <div class="container">
   	<section id="contact">
   		<h4 class="center-align">Kontakt</h4>
+			<p class="center-align"><br>Du brauchst ein neuer Auftrit, eine neue Webseite oder du möchtest uns einfach nur etwas mitteilen? Dan Schreib uns doch einfach ein <a href="mailto:#">E-Mail</a> oder füll unser Kontaktformular aus.<br></p><h5 class="center-align">Wir freuen uns auch über alle Ideen, Anliegen und Inputs!</h5>
   			<form class="col s12" action="http://formspree.io/manuel.anrig@bluewin.ch" method="POST">
   			  <div class="row">
             <div class="input-field col s6">
@@ -209,8 +218,7 @@
             </div>
           </div>
           <button class="btn black white-text center right z-depth-0" type="submit" name="action">
-            Absenden
-            <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+            Senden
           </button>
           <br>
           <br>
@@ -222,26 +230,8 @@
   </div>
 </div>
 <button class="btn z-depth-0" id="btntop" onclick="topFunction()">
-            <i class="fa fa-arrow-up" aria-hidden="true" style=" vertical-align: middle;"></i>
+        <i class="fa fa-angle-up fa-3x" aria-hidden="true"></i>
 </button>
-	<script>
-			// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction()};
-
-		function scrollFunction() {
-				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-						document.getElementById("btntop").style.display = "block";
-				} else {
-						document.getElementById("btntop").style.display = "none";
-				}
-		}
-
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-				document.body.scrollTop = 0; // For Chrome, Safari and Opera
-				document.documentElement.scrollTop = 0; // For IE and Firefox
-		}
-	</script>
 <footer class="page-footer grey">
           <div class="container">
               <div class="row">
@@ -255,16 +245,36 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2017 schwarzpunkt.
-            <a class="grey-text text-lighten-4 right" href="#!">Impressum</a>
+            &copy; 2017 schwarzpunkt.
+            <a class="grey-text text-lighten-4 right" href="Impressum.html">Impressum</a>
             </div>
           </div>
 </footer>
-<!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/scroll.js"></script>
+<script>
+	// Navigation
+	$('a').click(function(){
+		$('html, body').animate({
+				scrollTop: $( $(this).attr('href') ).offset().top
+		}, 500);
+	});
 
-  </body>
+	// Scroll Up Button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+		if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+				document.getElementById("btntop").style.display = "block";
+		} else {
+				document.getElementById("btntop").style.display = "none";
+		}
+	}
+	function topFunction() {				
+		$('html, body').animate({scrollTop:0}, 500);
+	}
+</script>
+<!--  Scripts-->
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="js/scroll.js"></script>
+</body>
 </html>
