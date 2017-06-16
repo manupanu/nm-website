@@ -185,6 +185,16 @@ section {
 	ul li a i:hover {
 		opacity: .7;
 	}
+	.bw {
+		transition: all 0.2s ease-in-out;
+		-webkit-filter: grayscale(100%); /* Safari */
+		filter: grayscale(100%);
+	}
+	.bw:hover {
+		-webkit-filter: grayscale(0%); /* Safari */
+		filter: grayscale(0%);
+	}
+
 
 
 /* Width & height calculation speicial for mobile devices FUNKTIONIERT NO NID*/
