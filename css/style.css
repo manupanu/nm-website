@@ -197,6 +197,7 @@ section {
 
 
 
+
 /* Width & height calculation speicial for mobile devices FUNKTIONIERT NO NID*/
 @media screen
   and (device-width: 320px)
