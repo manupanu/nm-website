@@ -1,7 +1,12 @@
 (function($){
   $(function(){
 
-    $('.button-collapse').sideNav();
+    $('.button-collapse').sideNav({
+        edge: 'right',
+        closeOnClick: true,
+        draggable: true
+        }
+    );
     $('.parallax').parallax();
 
   }); // end of document ready
