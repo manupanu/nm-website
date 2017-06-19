@@ -4,7 +4,7 @@
     $('.button-collapse').sideNav({
         edge: 'right',
         closeOnClick: true,
-        draggable: true
+        draggable: false
         }
     );
     $('.parallax').parallax();
